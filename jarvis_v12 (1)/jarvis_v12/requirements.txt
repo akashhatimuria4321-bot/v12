@@ -1,0 +1,54 @@
+# JARVIS OMEGA V12 — requirements.txt
+# Python 3.14.5 compatible
+# Install: pip install -r requirements.txt --break-system-packages
+
+# ── GUI ──────────────────────────────────────────────────────────────────
+PyQt6>=6.7.0
+
+# ── AI / LLM (Ollama is local — no pip needed, install separately) ────────
+# Ollama: https://ollama.ai  → run: ollama pull llama3.2
+requests>=2.31.0
+
+# ── Speech To Text ────────────────────────────────────────────────────────
+SpeechRecognition>=3.10.4
+sounddevice>=0.4.6
+numpy>=2.0.0
+# Optional: faster local STT (large download)
+# openai-whisper>=20231117
+
+# ── Text To Speech ────────────────────────────────────────────────────────
+edge-tts>=6.1.9
+pyttsx3>=2.90
+
+# ── Screen Vision / OCR ───────────────────────────────────────────────────
+Pillow>=10.3.0
+pytesseract>=0.3.13
+mss>=9.0.1
+# NOTE: Also install Tesseract OCR engine:
+# https://github.com/tesseract-ocr/tesseract/releases
+# Recommended: tesseract-ocr-w64-setup-5.x.x.exe (Windows 64-bit)
+
+# Optional: computer vision (improves OCR accuracy)
+# opencv-python>=4.9.0
+
+# ── App Control / Automation ──────────────────────────────────────────────
+pyautogui>=0.9.54
+pygetwindow>=0.0.9
+psutil>=6.0.0
+
+# ── USB Serial / Microcontrollers ─────────────────────────────────────────
+pyserial>=3.5
+# For ESP32 flashing:
+# esptool>=4.7.0
+# Arduino CLI (not pip — download from https://arduino.github.io/arduino-cli/)
+
+# ── Web Research ──────────────────────────────────────────────────────────
+duckduckgo-search>=6.2.0
+
+# ── Database (built-in) ───────────────────────────────────────────────────
+# sqlite3 — included in Python stdlib
+
+# ── Optional extras ───────────────────────────────────────────────────────
+# winreg   — built-in on Windows
+# ctypes   — built-in on Windows
+# pywintypes (some pygetwindow features): pywin32>=306

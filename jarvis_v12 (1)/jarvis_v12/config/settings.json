@@ -1,0 +1,43 @@
+{
+  "user_name": "Sir",
+  "ai_name": "JARVIS",
+  "tts_voice": "en-IN-PrabhatNeural",
+  "tts_edge_rate": "+5%",
+  "tts_edge_pitch": "+0Hz",
+  "tts_rate": 175,
+  "hinglish_display_mode": true,
+  "hinglish_speak_mode": true,
+  "hindi_speak_mode": false,
+  "stt_language": "hi-en",
+  "stt_fallback_langs": ["hi-IN", "en-IN", "en-US"],
+  "whisper_model": "tiny",
+  "offline_mode": false,
+  "ollama_url": "http://localhost:11434",
+
+  "V10_MODELS": {
+    "chat":      "llama3.2",
+    "fast":      "phi3:3.8b",
+    "code":      "deepseek-coder:1.3b",
+    "reasoning": "qwen3.5:4b",
+    "vision":    "qwen3-vl:2b",
+    "creative":  "llama3.2"
+  },
+
+  "V10_FEATURES": {
+    "computer_control_enabled":   true,
+    "vision_enabled":             true,
+    "continuous_screen_reading":  true,
+    "learning_enabled":           true,
+    "web_search_enabled":         true,
+    "chrome_research_enabled":    true,
+    "app_control_enabled":        true,
+    "pendrive_monitor_enabled":   true,
+    "home_automation_enabled":    false,
+    "esc_orb_mode":               false,
+    "esc_orb_size":               52
+  },
+
+  "home_automation_port": "",
+  "home_automation_baud": 9600,
+  "home_automation_commands": {}
+}
